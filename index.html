@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Page Search Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Search Widget -->
+    <div class="search-widget" id="searchWidget">
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="21 21l-4.35-4.35"></path>
+                </svg>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search this page..." 
+                    autocomplete="off"
+                >
+                <button class="clear-btn" id="clearBtn" style="display: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="search-results" id="searchResults" style="display: none;">
+                <span class="results-count" id="resultsCount">0 results</span>
+                <div class="navigation-controls">
+                    <button class="nav-btn" id="prevBtn" disabled>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="15,18 9,12 15,6"></polyline>
+                        </svg>
+                    </button>
+                    <span class="current-result" id="currentResult">0/0</span>
+                    <button class="nav-btn" id="nextBtn" disabled>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sample Content for Testing -->
+    <div class="content-wrapper">
+        <header class="hero-section">
+            <h1>Welcome to Our Advanced Search Demo</h1>
+            <p>This page demonstrates a powerful in-page search functionality with beautiful design and smooth animations.</p>
+        </header>
+
+        <main class="main-content">
+            <section class="section">
+                <h2>About Our Search Technology</h2>
+                <p>Our search function uses advanced JavaScript algorithms to quickly scan through all text content on this page. It highlights matching terms in real-time and provides intuitive navigation between results.</p>
+                <p>The search is case-insensitive and supports partial matching, making it easy to find exactly what you're looking for even with incomplete search terms.</p>
+            </section>
+
+            <section class="section">
+                <h2>Features and Capabilities</h2>
+                <ul>
+                    <li>Real-time search results with instant highlighting</li>
+                    <li>Smooth animations and transitions</li>
+                    <li>Keyboard shortcuts for enhanced productivity</li>
+                    <li>Mobile-responsive design</li>
+                    <li>Clean, modern user interface</li>
+                </ul>
+                <p>Try searching for terms like "search", "technology", "features", or any other word you see on this page to experience the functionality.</p>
+            </section>
+
+            <section class="section">
+                <h2>How to Use</h2>
+                <p>Simply start typing in the search box above. As you type, matching text will be highlighted throughout the page. Use the navigation arrows to jump between different matches, or press Enter to cycle through results.</p>
+                <p>The search function scans all visible text content including headings, paragraphs, list items, and other text elements. It's designed to be fast and responsive, providing immediate feedback as you search.</p>
+            </section>
+
+            <section class="section">
+                <h2>Technical Implementation</h2>
+                <p>This search functionality is built using vanilla JavaScript, HTML, and CSS without any external dependencies. It demonstrates modern web development techniques including:</p>
+                <ul>
+                    <li>DOM manipulation and traversal</li>
+                    <li>Event handling and user interaction</li>
+                    <li>CSS animations and transitions</li>
+                    <li>Responsive design principles</li>
+                    <li>Accessibility considerations</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Performance and Optimization</h2>
+                <p>The search algorithm is optimized for performance, using efficient text matching techniques and DOM manipulation methods. It can handle large amounts of content while maintaining smooth performance.</p>
+                <p>Results are highlighted using CSS classes that are dynamically added and removed, ensuring clean markup and optimal rendering performance.</p>
+            </section>
+
+            <footer class="footer">
+                <p>This search demo showcases advanced front-end development techniques and modern UI design principles. The implementation focuses on user experience, performance, and visual appeal.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
